@@ -181,12 +181,13 @@ a {
 	box-shadow: 2px 2px 20px #444;
 }
 button {
-	border-radius: 5px;
+	border-radius: 3px;
+	border: none;
 	background-color: #16a085;
 	padding: 5px 15px;
-	box-shadow: 2px 2px 2px #444;
 	text-shadow: 1px 1px 30px #666;
 	font-size: 20px;
+	cursor: pointer;
 }
 .section-buttons i {
 	padding: 20px 10px;
@@ -197,8 +198,9 @@ button {
 }
 
 @keyframes buttonColor {
-	from {background-color: #16a085}
-	to {background-color: #2980b9}
+	0% {background-color: #16a085;}
+	50% {background-color: #2980b9;}
+	100% {background-color: #16a085;}
 }
 
 footer {
@@ -222,9 +224,6 @@ input {
 	font-size: 14px;
 	padding: 5px;
 }
-input:focus {
-	background-color: #bdc3c7;
-}
 input[type="submit"] {
 	height: 30px;
 	border: none;
@@ -233,6 +232,7 @@ input[type="submit"] {
 	font-size: 18px;
 	text-shadow: 1px 1px 30px #666;
 	box-shadow: 2px 2px 2px #444;
+	cursor: pointer;
 }
 
 @media(max-width: 991px) {
